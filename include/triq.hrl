@@ -18,6 +18,8 @@
 %% limitations under the License.
 %%
 
+-define(DOMAIN_MODULE, triq_dom).
+
 %%
 %% import property functions
 %%
@@ -81,7 +83,6 @@
 
 -define(DELAY(X), fun()->X end).
 -define(FORCE(X), (X)() ).
--define(DOMAIN_MODULE, triq_dom).
 
 %% properties
 -define(FORALL(X,Gen,Property),
